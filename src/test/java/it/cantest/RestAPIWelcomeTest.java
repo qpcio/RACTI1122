@@ -14,4 +14,15 @@ class RestAPIWelcomeTest {
         //then
         Assertions.assertTrue(result);
     }
+
+
+    @Test
+    void shouldReturnFalseForNotEven() {
+        //given
+        int number = 77;
+        //when
+        boolean result = RestAPIWelcome.isEven(number);
+        //then
+        Assertions.assertFalse(result);
+    }
 }
