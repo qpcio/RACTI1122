@@ -23,6 +23,6 @@ class RestAPIWelcomeTest {
         //when
         boolean result = RestAPIWelcome.isEven(number);
         //then
-        Assertions.assertFalse(result);
+        Assertions.assertTrue(result,"There should be FALSE returned for the odd number");
     }
 }
